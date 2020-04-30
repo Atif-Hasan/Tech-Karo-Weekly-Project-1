@@ -1,0 +1,53 @@
+
+* {
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    margin:0;
+}
+
+nav {
+    border-right: 1px solid #000;
+    max-width:300px;
+    height:100vh;
+}
+
+nav a {
+    border-top: 1px solid #000;
+    color:#000;
+    display: block;
+    padding: 15px;
+    text-decoration:none;
+}
+
+
+main {
+    flex:1;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+p {
+    padding:11px;
+}
+
+section {
+    padding:20px;
+    line-height: 1.5s;
+}
+
+nav header {
+    padding:15px;
+}
+header {
+    font-size: 24px;
+    font-weight: 500;
+    padding:5px;
+}
+
+.Function_text {
+background-color: #f7f7f7;
+margin-left: 20px;
+}
