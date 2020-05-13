@@ -8,6 +8,12 @@ body {
     margin:0;
 }
 
+h2 {
+    font-size:1.6em;
+    font-weight:bold;
+
+}
+
 nav {
     border-right: 1px solid #000;
     max-width:300px;
