@@ -109,17 +109,17 @@
             <h2>Declaring Variables</h2>
             <p>You can declare a variable in three ways:</p>
             <p>With the keyword var. For example,</p>
-            <p class="Function_text">var x = 42.</p>
+            <p class="function_text">var x = 42.</p>
             <p>This syntax can be used to declare both local and global variables.
             </p>
             <p>By simply assigning it a value. For example,
             </p>
-            <p class="Function_text">x = 42.</p>
+            <p class="function_text">x = 42.</p>
             <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this
                 variant.
             </p>
             <p>With the keyword let. For example,</p>
-            <p class="Function_text">let y = 13.
+            <p class="function_text">let y = 13.
             </p>
             <p>This syntax can be used to declare a block scope local variable. See Variable scope below.
             </p>
@@ -135,11 +135,11 @@
                 declared, not the block, which in this case is an if statement.
 
             </p>
-            <p class="Function_text">if (true) { var x = 5; } console.log(x); // 5
+            <p class="function_text">if (true) { var x = 5; } console.log(x); // 5
             </p>
             <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.
             </p>
-            <p class="Function_text">if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</p>
+            <p class="function_text">if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</p>
         </section>
         <section class="main-section" id="Global_variables">
             <h2>Global Variables</h2>
@@ -162,7 +162,7 @@
                 characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the
                 characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
             </p>
-            <p class="Function_text">const PI = 3.14;
+            <p class="function_text">const PI = 3.14;
 
             </p>
             <p>A constant cannot change value through assignment or be re-declared while the script is running. It has
@@ -172,13 +172,13 @@
             </p>
             <p>You cannot declare a constant with the same name as a function or variable in the same scope. For
                 example:</p>
-            <p class="Function_text">// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+            <p class="function_text">// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
                 CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
                 }
             </p>
             <p>However, object attributes are not protected, so the following statement is executed without problems.
             </p>
-            <p class="Function_text">const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+            <p class="function_text">const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
             </p>
         </section>
         <section class="main-section" id="Data_types">
@@ -213,7 +213,7 @@
             <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause
                 to execute a statement if the condition is false. An if statement looks as follows:
             </p>
-            <p class="Function_text">if (condition) { statement_1; } else { statement_2; }
+            <p class="function_text">if (condition) { statement_1; } else { statement_2; }
 
             </p>
             <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
@@ -225,31 +225,31 @@
             <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as
                 follows:
             </p>
-            <p class="Function_text">if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+            <p class="function_text">if (condition_1) { statement_1; } else if (condition_2) { statement_2;
                 } else if (condition_n) { statement_n; } else { statement_last; }
             </p>
             <p>In the case of multiple conditions only the first logical condition which evaluates to true will be
                 executed. To execute multiple statements, group them within a block statement ({ ... }) . In general,
                 it's good practice to always use block statements, especially when nesting if statements:</p>
-            <p class="Function_text">if (condition) { statement_1_runs_if_condition_is_true;
+            <p class="function_text">if (condition) { statement_1_runs_if_condition_is_true;
                 statement_2_runs_if_condition_is_true; } else {
                 statement_3_runs_if_condition_is_false;
                 statement_4_runs_if_condition_is_false; }
             </p>
             <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be
                 confused with equality when glancing over the code. For example, do not use the following code:</p>
-            <p class="Function_text">if (x = y) { /* statements here */ }
+            <p class="function_text">if (x = y) { /* statements here */ }
             </p>
             <p>If you need to use an assignment in a conditional expression, a common practice is to put additional
                 parentheses around the assignment. For example:</p>
-            <p class="Function_text">if ((x = y)) { /* statements here */ }</p>
+            <p class="function_text">if ((x = y)) { /* statements here */ }</p>
         </section>
         <section class="main-section">
             <h2>while statement</h2>
             <p>A while statement executes its statements as long as a specified condition evaluates to true. A while
                 statement looks as follows:
             </p>
-            <p class="Function_text">while (condition) statement
+            <p class="function_text">while (condition) statement
             </p>
             <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode
                 escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and
@@ -266,7 +266,7 @@
             <p>Example:</p>
             <p>The following while loop iterates as long as n is less than three:
             </p>
-            <p class="Function_text">var n = 0; var x = 0; while (n < 3) { n++; x +=n; } </p>
+            <p class="function_text">var n = 0; var x = 0; while (n < 3) { n++; x +=n; } </p>
                     <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on
                         the following values:</p>
                     <ul>
@@ -291,13 +291,13 @@
             </ul>
             <p>For example, the following code defines a simple function named square:
             </p>
-            <p class="Function_text">function square(number) { return number * number; }
+            <p class="function_text">function square(number) { return number * number; }
             </p>
             <p>The function square takes one argument, called number. The function consists of one statement that says
                 to return the argument of the function (that is, number) multiplied by itself. The return statement
                 specifies the value returned by the function.
             </p>
-            <p class="Function_text">return number * number;</p>
+            <p class="function_text">return number * number;</p>
             <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the
                 function, but if the function changes the value of the parameter, this change is not reflected globally
                 or in the calling function.
